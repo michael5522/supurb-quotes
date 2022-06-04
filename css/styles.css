@@ -1,0 +1,30 @@
+* {
+  font-family: "Proza Libre", sans-serif;
+}
+
+header {
+  background-color: #f0f0f0;
+}
+
+.header-container {
+  max-width: 575px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    max-width: 900px;
+  }
+}
+
+h1 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 2rem;
+  color: #562b81;
+  background-color: #f0f0f0;
+}
