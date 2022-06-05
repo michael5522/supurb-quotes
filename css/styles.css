@@ -28,3 +28,35 @@ h1 {
   color: #562b81;
   background-color: #f0f0f0;
 }
+
+.heading {
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding-left: 10px;
+  color: #562b81;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.relative-img-container {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.45;
+}
