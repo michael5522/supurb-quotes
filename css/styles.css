@@ -12,25 +12,23 @@ header {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .header-container {
-    max-width: 900px;
-  }
-}
-
 h1 {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 25px;
   margin-top: 0;
-  font-weight: normal;
+  margin-bottom: 0;
+  font-weight: 600;
   font-size: 2rem;
   color: #562b81;
   background-color: #f0f0f0;
+  font-family:
+    Lexend,
+    sans-serif;
 }
 
 .heading {
-  font-weight: 400;
+  font-weight: normal;
   font-size: 1.25rem;
   padding-left: 10px;
   color: #562b81;
@@ -47,17 +45,6 @@ h1 {
   text-align: center;
   color: black;
   border: 1px solid;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family:
-    "Dancing Script",
-    cursive;
-  font-size: 1em;
 }
 
 img {
@@ -85,8 +72,9 @@ img {
 }
 
 h6 {
-  margin-top: 0;
-  margin-bottom: 15px;
+  font-weight: normal;
+  margin-top: 2px;
+  margin-bottom: 5px;
 }
 
 .author {
@@ -96,7 +84,7 @@ h6 {
 
 button {
   margin-top: 15px;
-  border: 1 solid;
+  border: 0.5px solid;
   padding: 5px;
   background-color: #f0f0f0;
   border-radius: 1px;
@@ -107,15 +95,17 @@ button {
 
 .custom-row {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .custom-quote {
-  margin-right: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
 .random-quote {
-  margin-left: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
 }
