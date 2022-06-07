@@ -8,10 +8,51 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
+    <div class="header-container">
+      <h1>Supurb Quotes</h1>
+    </div>
   </header>
+
+  <div class="container">
+    <div class="row">
+      <h2 class="heading">Quote of the Day</h2>
+    </div>
+
+    <div class="row flex-column">
+      <div class="relative-img-container">
+        <img src="./images/background.jpeg" alt="blank" id="img">
+        <div class="centered">Together we can change the world, just one random act of kindness at a time. I don't believe that if you do good, good
+        things will happen. Everything is completely accidental and random. Sometimes bad things happen to very good people and
+        sometimes good things happen to bad people.</div>
+      </div>
+      <div class="logo">Supurb quotes</div>
+      <div class="text-area">
+        <h6>
+          Together we can change the world, just one random act of kindness at a time. I don't believe that if you do good, good
+          things will happen. Everything is completely accidental and random. Sometimes bad things happen to very good people and
+          sometimes good things happen to bad people.
+        </h6>
+        <h6 class="author">Anderson Greato</h6>
+      </div>
+    </div>
+
+    <div class="custom-row">
+      <button class="custom-quote flex-column column-full">
+        Click to get Custom Quote
+      </button>
+      <button class="random-quote flex-column column-full">
+        Generate Random Quote
+      </button>
+    </div>
+  </div>
+
   <main>
   </main>
   <script src="js/data.js"></script>

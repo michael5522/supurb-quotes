@@ -1,0 +1,111 @@
+* {
+  font-family: "Proza Libre", sans-serif;
+}
+
+header {
+  background-color: #f0f0f0;
+}
+
+.header-container {
+  max-width: 575px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #562b81;
+  background-color: #f0f0f0;
+  font-family:
+    Lexend,
+    sans-serif;
+}
+
+.heading {
+  font-weight: normal;
+  font-size: 1.25rem;
+  padding-left: 10px;
+  color: #562b81;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.relative-img-container {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: black;
+  border: 1px solid;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.45;
+  border: 1px solid;
+  box-shadow: 3px 2px 2px gray;
+}
+
+.logo {
+  background-color: #b6b6b6;
+  text-align: center;
+  margin-top: -2px;
+  border: 1px solid black;
+  color: white;
+  box-shadow: 3px 2px 2px gray;
+}
+
+.text-area {
+  width: 100%;
+  border: 1px solid;
+  box-shadow: 3px 2px 2px gray;
+}
+
+h6 {
+  font-weight: normal;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+.author {
+  color: #562b81;
+  font-size: 1.01rem;
+}
+
+button {
+  margin-top: 15px;
+  border: 0.5px solid;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border-radius: 1px;
+  box-shadow: 3px 2px 2px gray;
+  width: 70%;
+  color: #562b81;
+}
+
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.custom-quote {
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.random-quote {
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+}
