@@ -45,6 +45,7 @@ h1 {
   text-align: center;
   color: black;
   border: 1px solid;
+  overflow: auto;
 }
 
 img {
@@ -91,6 +92,7 @@ button {
   box-shadow: 3px 2px 2px gray;
   width: 70%;
   color: #562b81;
+  cursor: pointer;
 }
 
 .custom-row {
@@ -108,4 +110,9 @@ button {
   margin-bottom: 15px;
   align-items: center;
   justify-content: center;
+}
+
+.random-quote:hover {
+  font-weight: bold;
+  background-color: #b6b6b6;
 }
