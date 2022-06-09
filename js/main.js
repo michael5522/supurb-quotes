@@ -2,12 +2,132 @@
 var mainQuote = document.querySelector('.centered');
 var miniQuote = document.querySelector('.mini-text');
 var authorQuote = document.querySelector('.author');
-var customQuoteButton = document.querySelector('.random-quote');
+var randomQuoteButton = document.querySelector('.random-quote');
 var headingPhrase = document.querySelector('.heading');
+var customQuote = document.querySelector('.custom-quote');
+var yesButton = document.querySelector('.yes-button');
+var noButton = document.querySelector('.no-button');
 
-customQuoteButton.addEventListener('click', function () {
+randomQuoteButton.addEventListener('click', function () {
   randomNumberForChooseQuote();
-  headingPhrase.textContent = 'Your Custom Quote';
+  headingPhrase.textContent = 'Your Random Quote';
+});
+
+var counter = null;
+customQuote.addEventListener('click', function () {
+  counter = Math.floor(Math.random() * 4) + 1;
+  randomQuoteButton.classList.add('hidden');
+  customQuote.classList.add('hidden');
+  yesButton.classList.remove('hidden');
+  noButton.classList.remove('hidden');
+
+  if (counter === 1) {
+    mainQuote.textContent = '';
+    miniQuote.textContent = '';
+    headingPhrase.textContent = 'Custom Quote Generating';
+    authorQuote.textContent = 'Would you like to receive an Inspirational Quote?';
+  }
+  if (counter === 2) {
+    mainQuote.textContent = '';
+    miniQuote.textContent = '';
+    headingPhrase.textContent = 'Custom Quote Generating';
+    authorQuote.textContent = 'Would you like to receive an Anime Quote?';
+  }
+  if (counter === 3) {
+    mainQuote.textContent = '';
+    miniQuote.textContent = '';
+    headingPhrase.textContent = 'Custom Quote Generating';
+    authorQuote.textContent = 'Would you like to receive a Kayne West Quote?';
+  }
+  if (counter === 4) {
+    mainQuote.textContent = '';
+    miniQuote.textContent = '';
+    headingPhrase.textContent = 'Custom Quote Generating';
+    authorQuote.textContent = 'Would you like to receive a Motivational Quote?';
+  }
+});
+
+yesButton.addEventListener('click', function () {
+  if (counter === 1) {
+    headingPhrase.textContent = 'Custom Quote Generated';
+    customQuote.textContent = 'Click to get Custom Quote';
+    randomQuoteButton.textContent = 'Generate Random Quote';
+    randomQuoteButton.classList.remove('hidden');
+    customQuote.classList.remove('hidden');
+    yesButton.classList.add('hidden');
+    noButton.classList.add('hidden');
+    quoteGeneratorOne();
+  }
+  if (counter === 2) {
+    headingPhrase.textContent = 'Custom Quote Generated';
+    customQuote.textContent = 'Click to get Custom Quote';
+    randomQuoteButton.textContent = 'Generate Random Quote';
+    randomQuoteButton.classList.remove('hidden');
+    customQuote.classList.remove('hidden');
+    yesButton.classList.add('hidden');
+    noButton.classList.add('hidden');
+    quoteGeneratorTwo();
+  }
+  if (counter === 3) {
+    headingPhrase.textContent = 'Custom Quote Generated';
+    customQuote.textContent = 'Click to get Custom Quote';
+    randomQuoteButton.textContent = 'Generate Random Quote';
+    randomQuoteButton.classList.remove('hidden');
+    customQuote.classList.remove('hidden');
+    yesButton.classList.add('hidden');
+    noButton.classList.add('hidden');
+    quoteGeneratorThree();
+  }
+  if (counter === 4) {
+    headingPhrase.textContent = 'Custom Quote Generated';
+    customQuote.textContent = 'Click to get Custom Quote';
+    randomQuoteButton.textContent = 'Generate Random Quote';
+    randomQuoteButton.classList.remove('hidden');
+    customQuote.classList.remove('hidden');
+    yesButton.classList.add('hidden');
+    noButton.classList.add('hidden');
+    quoteGeneratorFour();
+  }
+});
+
+noButton.addEventListener('click', function () {
+  if (counter === 4) {
+    counter = 0;
+  }
+  counter++;
+
+  if (counter === 1) {
+    mainQuote.textContent = '';
+    miniQuote.textContent = '';
+    headingPhrase.textContent = 'Custom Quote Generating';
+    authorQuote.textContent = 'Would you like to receive an Inspirational Quote?';
+    customQuote.textContent = 'Yedfsfdsfsfs';
+    randomQuoteButton.textContent = 'Ndsfsdfdfso';
+  }
+  if (counter === 2) {
+    mainQuote.textContent = '';
+    miniQuote.textContent = '';
+    headingPhrase.textContent = 'Custom Quote Generating';
+    authorQuote.textContent = 'Would you like to receive an Anime Quote?';
+    customQuote.textContent = 'Yedfsfdsfsfs';
+    randomQuoteButton.textContent = 'Ndsfsdfdfso';
+  }
+  if (counter === 3) {
+    mainQuote.textContent = '';
+    miniQuote.textContent = '';
+    headingPhrase.textContent = 'Custom Quote Generating';
+    authorQuote.textContent = 'Would you like to receive a Kayne West Quote?';
+    customQuote.textContent = 'Yedfsfdsfsfs';
+    randomQuoteButton.textContent = 'Ndsfsdfdfso';
+  }
+  if (counter === 4) {
+    mainQuote.textContent = '';
+    miniQuote.textContent = '';
+    headingPhrase.textContent = 'Custom Quote Generating';
+    authorQuote.textContent = 'Would you like to receive a Motivational Quote?';
+    customQuote.textContent = 'Yedfsfdsfsfs';
+    randomQuoteButton.textContent = 'Ndsfsdfdfso';
+  }
 });
 
 function quoteGeneratorOne() {
@@ -23,6 +143,7 @@ function quoteGeneratorOne() {
   });
   xhr.send();
 }
+
 function quoteGeneratorTwo() {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'https://animechan.vercel.app/api/random');
