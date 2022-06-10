@@ -46,6 +46,8 @@ h1 {
   color: black;
   border: 1px solid;
   overflow: auto;
+  box-shadow: 3px 2px 2px gray;
+  box-shadow: 0 6px 6px -4px rgb(0 0 0 / 30%);
 }
 
 img {
@@ -64,21 +66,30 @@ img {
   border: 1px solid black;
   color: white;
   box-shadow: 3px 2px 2px gray;
+  box-shadow: 0 6px 6px -4px rgb(0 0 0 / 30%);
 }
 
 .text-area {
   width: 100%;
   border: 1px solid;
   box-shadow: 3px 2px 2px gray;
+  box-shadow: 0 6px 6px -4px rgb(0 0 0 / 30%);
 }
 
 h6 {
+  margin-left: 8px;
   font-weight: normal;
-  margin-top: 2px;
-  margin-bottom: 5px;
+  font-size: 0.85rem;
+
+  /* margin-top: 4px;
+  margin-bottom: 5px; */
+  margin-top: 14px;
+  margin-bottom: 15px;
 }
 
 .author {
+  margin-top: 25px;
+  margin-bottom: 21px;
   color: #562b81;
   font-size: 1.01rem;
 }
@@ -90,6 +101,7 @@ button {
   background-color: #f0f0f0;
   border-radius: 1px;
   box-shadow: 3px 2px 2px gray;
+  box-shadow: 0 6px 6px -4px rgb(0 0 0 / 30%);
   width: 70%;
   color: #562b81;
   cursor: pointer;
@@ -100,19 +112,23 @@ button {
   flex-wrap: wrap;
 }
 
-.custom-quote {
+.custom-quote,
+.random-quote,
+.yes-button,
+.no-button {
   margin-bottom: 15px;
   align-items: center;
   justify-content: center;
 }
 
-.random-quote {
-  margin-bottom: 15px;
-  align-items: center;
-  justify-content: center;
-}
-
-.random-quote:hover {
+.random-quote:hover,
+.yes-button:hover,
+.no-button:hover,
+.custom-quote:hover {
   font-weight: bold;
   background-color: #b6b6b6;
+}
+
+.hidden {
+  display: none;
 }
