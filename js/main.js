@@ -7,6 +7,13 @@ var headingPhrase = document.querySelector('.heading');
 var customQuote = document.querySelector('.custom-quote');
 var yesButton = document.querySelector('.yes-button');
 var noButton = document.querySelector('.no-button');
+var backgroundOne = document.querySelector('.one');
+var backgroundTwo = document.querySelector('.two');
+var backgroundThree = document.querySelector('.three');
+var backgroundFour = document.querySelector('.four');
+var changeImage = document.querySelector('#img');
+var buttonContainer = document.querySelector('.button-container');
+var individualButtons = document.querySelectorAll('.mini');
 
 randomQuoteButton.addEventListener('click', function () {
   randomNumberForChooseQuote();
@@ -101,32 +108,24 @@ noButton.addEventListener('click', function () {
     miniQuote.textContent = '';
     headingPhrase.textContent = 'Custom Quote Generating';
     authorQuote.textContent = 'Would you like to receive an Inspirational Quote?';
-    customQuote.textContent = 'Yedfsfdsfsfs';
-    randomQuoteButton.textContent = 'Ndsfsdfdfso';
   }
   if (counter === 2) {
     mainQuote.textContent = '';
     miniQuote.textContent = '';
     headingPhrase.textContent = 'Custom Quote Generating';
     authorQuote.textContent = 'Would you like to receive an Anime Quote?';
-    customQuote.textContent = 'Yedfsfdsfsfs';
-    randomQuoteButton.textContent = 'Ndsfsdfdfso';
   }
   if (counter === 3) {
     mainQuote.textContent = '';
     miniQuote.textContent = '';
     headingPhrase.textContent = 'Custom Quote Generating';
     authorQuote.textContent = 'Would you like to receive a Kayne West Quote?';
-    customQuote.textContent = 'Yedfsfdsfsfs';
-    randomQuoteButton.textContent = 'Ndsfsdfdfso';
   }
   if (counter === 4) {
     mainQuote.textContent = '';
     miniQuote.textContent = '';
     headingPhrase.textContent = 'Custom Quote Generating';
     authorQuote.textContent = 'Would you like to receive a Motivational Quote?';
-    customQuote.textContent = 'Yedfsfdsfsfs';
-    randomQuoteButton.textContent = 'Ndsfsdfdfso';
   }
 });
 
@@ -202,3 +201,28 @@ function randomNumberForChooseQuote() {
 }
 
 randomNumberForChooseQuote();
+
+backgroundOne.addEventListener('click', function () {
+  changeImage.src = './images/001.jpeg';
+});
+backgroundTwo.addEventListener('click', function () {
+  changeImage.src = './images/002.jpeg';
+});
+backgroundThree.addEventListener('click', function () {
+  changeImage.src = './images/003.jpeg';
+});
+backgroundFour.addEventListener('click', function () {
+  changeImage.src = './images/004.jpeg';
+});
+
+buttonContainer.addEventListener('click', function (event) {
+  if (event.target.matches('.mini')) {
+    for (var i = 0; i < individualButtons.length; i++) {
+      if (individualButtons[i] !== event.target) {
+        individualButtons[i].classList.remove('active');
+      } else {
+        individualButtons[i].classList.add('active');
+      }
+    }
+  }
+});
