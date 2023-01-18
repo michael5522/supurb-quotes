@@ -15,6 +15,12 @@ var changeImage = document.querySelector('#img');
 var buttonContainer = document.querySelector('.button-container');
 var individualButtons = document.querySelectorAll('.mini');
 
+/* eslint-disable no-console */
+var loaderInvisible = document.querySelector('#loader');
+console.log(loaderInvisible);
+console.log(customQuote);
+console.log(yesButton);
+
 randomQuoteButton.addEventListener('click', function () {
   randomNumberForChooseQuote();
   headingPhrase.textContent = 'Your Random Quote';
@@ -118,11 +124,20 @@ function quoteGeneratorOne() {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'https://lfz-cors.herokuapp.com/?url=' + targetUrl);
   xhr.responseType = 'json';
+  xhr.addEventListener('loadstart', function () {
+    console.log('ola mfa', loaderInvisible);
+    // customQuote.classList.add('hidden');
+    loaderInvisible.classList.remove('hidden');
+
+  });
   xhr.addEventListener('load', function () {
     var result = xhr.response;
     mainQuote.textContent = result.quoteText;
     authorQuote.textContent = result.quoteAuthor;
     miniQuote.textContent = result.quoteText;
+    console.log('finsihed loading');
+    customQuote.classList.add('xxxxxhidden');
+    console.log(loaderInvisible);
   });
   xhr.send();
 }
