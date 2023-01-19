@@ -168,24 +168,83 @@ button {
 }
 
 /*  ui */
+
 .lds-dual-ring.hidden {
   display: none;
 }
 
 /* Add an overlay to the entire page blocking any further presses to buttons or other elements. */
-.overlay {
+
+/* .overlay {
   position: fixed;
+  background-color: rgba(0, 0, 0, 0.256);
+  width: 100% !important;
+  height: 100vh !important;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 999;
-  opacity: 1;
-  transition: all 0.5s;
-}
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+} */
 
 /* Spinner Styles */
+
+/* .lds-dual-ring {
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+}
+
+.lds-dual-ring::after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 5% auto;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+.off {
+  display: none;
+}
+
+/* .lds-duel-ring {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 80px;
+  height: 80px;
+} */
+
+.overlay {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 70%);
+}
+
 .lds-dual-ring {
   display: inline-block;
   width: 80px;
@@ -195,8 +254,8 @@ button {
 .lds-dual-ring::after {
   content: " ";
   display: block;
-  width: 64px;
-  height: 64px;
+  width: 164px;
+  height: 164px;
   margin: 5% auto;
   border-radius: 50%;
   border: 6px solid #fff;
