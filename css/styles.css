@@ -231,7 +231,7 @@ button {
   height: 80px;
 } */
 
-.overlay {
+/* .overlay {
   display: flex;
   text-align: center;
   align-items: center;
@@ -243,7 +243,7 @@ button {
   width: 100%;
   height: 100%;
   background-color: rgb(0 0 0 / 70%);
-}
+} */
 
 .lds-dual-ring {
   display: inline-block;
@@ -254,8 +254,8 @@ button {
 .lds-dual-ring::after {
   content: " ";
   display: block;
-  width: 164px;
-  height: 164px;
+  width: 80px;
+  height: 80px;
   margin: 5% auto;
   border-radius: 50%;
   border: 6px solid #fff;
@@ -271,4 +271,18 @@ button {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.overlay {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 70%);
 }
