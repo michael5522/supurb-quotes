@@ -221,19 +221,19 @@ function CustomQuoteGenerating() {
 }
 
 function authorQuoteInspiration() {
-  authorQuote.textContent = 'Would you like to receive an Inspirational Quote?';
+  authorQuote.textContent = 'Would you like to read an inspiring quote?';
 }
 
 function authorQuoteAnime() {
-  authorQuote.textContent = 'Would you like to receive an Anime Quote?';
+  authorQuote.textContent = 'Would you like to read an anime quote?';
 }
 
 function authorQuoteKayne() {
-  authorQuote.textContent = 'Would you like to receive a Kayne West Quote?';
+  authorQuote.textContent = 'Would you like to read a Kayne West quote?';
 }
 
 function authorQuoteMotivational() {
-  authorQuote.textContent = 'Would you like to receive a Motivational Quote?';
+  authorQuote.textContent = 'Would you like to read a mindful quote?';
 }
 
 backgroundOne.addEventListener('click', function () {
