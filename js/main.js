@@ -115,6 +115,7 @@ noButton.addEventListener('click', function () {
 });
 
 function quoteGeneratorOne() {
+  // inspiring quote potential
   var targetUrl = encodeURIComponent('http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en');
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'https://lfz-cors.herokuapp.com/?url=' + targetUrl);
@@ -122,13 +123,20 @@ function quoteGeneratorOne() {
   xhr.addEventListener('loadstart', function () {
     loaderInvisible.classList.remove('hidden');
   });
+
   xhr.addEventListener('load', function () {
     var result = xhr.response;
+    if (result === null) {
+      authorQuote.textContent = 'Sorry, there was an error connecting to the network! Please refresh the website and try again!';
+      miniQuote.textContent = '';
+      mainQuote.textContent = '';
+    }
     mainQuote.textContent = result.quoteText;
     authorQuote.textContent = result.quoteAuthor;
     miniQuote.textContent = result.quoteText;
     loaderInvisible.classList.add('hidden');
   });
+
   xhr.send();
 }
 
@@ -141,6 +149,11 @@ function quoteGeneratorTwo() {
   });
   xhr.addEventListener('load', function () {
     var result = xhr.response;
+    if (result === null) {
+      authorQuote.textContent = 'Sorry, there was an error connecting to the network! Please refresh the website and try again!';
+      miniQuote.textContent = '';
+      mainQuote.textContent = '';
+    }
     mainQuote.textContent = result.quote;
     authorQuote.textContent = result.character;
     miniQuote.textContent = result.quote;
@@ -159,6 +172,11 @@ function quoteGeneratorThree() {
   });
   xhr.addEventListener('load', function () {
     var result = xhr.response;
+    if (result === null) {
+      authorQuote.textContent = 'Sorry, there was an error connecting to the network! Please refresh the website and try again!';
+      miniQuote.textContent = '';
+      mainQuote.textContent = '';
+    }
     mainQuote.textContent = result.quote;
     authorQuote.textContent = 'Kayne West';
     miniQuote.textContent = result.quote;
@@ -177,6 +195,11 @@ function quoteGeneratorFour() {
   });
   xhr.addEventListener('load', function () {
     var result = xhr.response[0];
+    if (result === null) {
+      authorQuote.textContent = 'Sorry, there was an error connecting to the network! Please refresh the website and try again!';
+      miniQuote.textContent = '';
+      mainQuote.textContent = '';
+    }
     mainQuote.textContent = result.q;
     authorQuote.textContent = result.a;
     miniQuote.textContent = result.q;
