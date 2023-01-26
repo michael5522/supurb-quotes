@@ -14,6 +14,7 @@ var backgroundFour = document.querySelector('.four');
 var changeImage = document.querySelector('#img');
 var buttonContainer = document.querySelector('.button-container');
 var individualButtons = document.querySelectorAll('.mini');
+var loaderInvisible = document.querySelector('#loader');
 
 randomQuoteButton.addEventListener('click', function () {
   randomNumberForChooseQuote();
@@ -118,11 +119,15 @@ function quoteGeneratorOne() {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'https://lfz-cors.herokuapp.com/?url=' + targetUrl);
   xhr.responseType = 'json';
+  xhr.addEventListener('loadstart', function () {
+    loaderInvisible.classList.remove('hidden');
+  });
   xhr.addEventListener('load', function () {
     var result = xhr.response;
     mainQuote.textContent = result.quoteText;
     authorQuote.textContent = result.quoteAuthor;
     miniQuote.textContent = result.quoteText;
+    loaderInvisible.classList.add('hidden');
   });
   xhr.send();
 }
@@ -131,11 +136,15 @@ function quoteGeneratorTwo() {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'https://animechan.vercel.app/api/random');
   xhr.responseType = 'json';
+  xhr.addEventListener('loadstart', function () {
+    loaderInvisible.classList.remove('hidden');
+  });
   xhr.addEventListener('load', function () {
     var result = xhr.response;
     mainQuote.textContent = result.quote;
     authorQuote.textContent = result.character;
     miniQuote.textContent = result.quote;
+    loaderInvisible.classList.add('hidden');
   });
   xhr.send();
 }
@@ -145,11 +154,15 @@ function quoteGeneratorThree() {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'https://lfz-cors.herokuapp.com/?url=' + targetUrl);
   xhr.responseType = 'json';
+  xhr.addEventListener('loadstart', function () {
+    loaderInvisible.classList.remove('hidden');
+  });
   xhr.addEventListener('load', function () {
     var result = xhr.response;
     mainQuote.textContent = result.quote;
     authorQuote.textContent = 'Kayne West';
     miniQuote.textContent = result.quote;
+    loaderInvisible.classList.add('hidden');
   });
   xhr.send();
 }
@@ -159,11 +172,15 @@ function quoteGeneratorFour() {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'https://lfz-cors.herokuapp.com/?url=' + targetUrl);
   xhr.responseType = 'json';
+  xhr.addEventListener('loadstart', function () {
+    loaderInvisible.classList.remove('hidden');
+  });
   xhr.addEventListener('load', function () {
     var result = xhr.response[0];
     mainQuote.textContent = result.q;
     authorQuote.textContent = result.a;
     miniQuote.textContent = result.q;
+    loaderInvisible.classList.add('hidden');
   });
   xhr.send();
 }
