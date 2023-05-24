@@ -25,16 +25,18 @@ See it live here:  [Supurb Quote](https://michael5522.github.io/supurb-quotes/)
 ## Preview
 
 <!-- ![Desktop|500](/images/desktop-view.gif) -->
-<img src="/images/desktop-view.gif" width="500" height="500">
+<img src="/images/desktop-view.gif" width="400">
 <!-- ![Mobile|200](/images/mobile-view.gif) -->
-<img src="/images/mobile-view.gif" height="300">
+<p align="center">
+<img src="/images/mobile-view.gif" height="400">
+</p>
+
 ## Development
 
 ### System Requirements
 
-- NPM 8.1 or higher
+- This is a web application but having npm will allow for the activation of eslint and other style enforcement if you wish to alter the code locally.
 
-This is a web application but having npm will allow for the activation of eslint and other style enforcement if you wish to alter the code locally.
 
 ### Getting Started
 
