@@ -25,10 +25,10 @@ See it live here:  [Supurb Quote](https://michael5522.github.io/supurb-quotes/)
 ## Preview
 
 <!-- ![Desktop|500](/images/desktop-view.gif) -->
+<p align="center">
 <img src="/images/desktop-view.gif" width="400">
 <!-- ![Mobile|200](/images/mobile-view.gif) -->
-<p align="center">
-<img src="/images/mobile-view.gif" height="400">
+<img src="/images/mobile-view.gif" height="500">
 </p>
 
 ## Development
