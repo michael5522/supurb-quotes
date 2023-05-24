@@ -43,22 +43,28 @@ Mobile
 
 ### Getting Started
 
-1. Clone the repository.
+1. Clone the repository & navigate to the directory.
     ```shell
     git clone https://github.com/michael5522/supurb-quotes
     cd supurb-quotes
     ```
- 2. View project by opening ```index.html``` in your browser.
+ 2. Open new instance of VS Code window by using the following command
+    ```shell
+    code .
+    ```
+ 3. If you don't already have the Live Server extension add that
+
+ 4. View project by clicking on ```index.html``` and select 'Open with Live Server'
 
 
-## ScreenShots
-### Desktop
+## Screenshots
+Desktop
 <!-- ![Desktop|200](/images/desktop-view-pic.png) -->
 <p align="center">
 <img src="/images/desktop-view-pic.png" width="400">
 </p>
 
-### Mobile
+Mobile
 <!-- ![Mobile|200](/images/mobile-view-pic.png) -->
 <p align="center">
 <img src="/images/mobile-view-pic.png" height="500">
