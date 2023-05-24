@@ -27,7 +27,9 @@ See it live here:  [Supurb Quote](https://michael5522.github.io/supurb-quotes/)
 <!-- ![Desktop|500](/images/desktop-view.gif) -->
 <p align="center">
 <img src="/images/desktop-view.gif" width="400">
+</p>
 <!-- ![Mobile|200](/images/mobile-view.gif) -->
+<p align="center">
 <img src="/images/mobile-view.gif" height="500">
 </p>
 
