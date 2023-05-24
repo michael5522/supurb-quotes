@@ -1,8 +1,8 @@
 {
-  "name": "ajax-project",
+  "name": "Supurb-Quote-project",
   "version": "1.0.0",
   "private": true,
-  "description": "A dynamic HTML, CSS, and JavaScript solo project.",
+  "description": "A dynamic HTML, CSS, and JavaScript solo project using API.",
   "main": "index.js",
   "scripts": {
     "prepare": "husky install"
