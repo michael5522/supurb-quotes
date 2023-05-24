@@ -24,9 +24,9 @@ See it live here:  [Supurb Quote](https://michael5522.github.io/supurb-quotes/)
 
 ## Preview
 
-![Desktop](/images/desktop-view.gif)
+![Desktop|500](/images/desktop-view.gif)
 
-![Mobile](/images/mobile-view.gif)
+![Mobile|200](/images/mobile-view.gif)
 
 ## Development
 
@@ -48,7 +48,7 @@ This is a web application but having npm will allow for the activation of eslint
 
 ## ScreenShots
 ### Desktop
-![Desktop](/images/desktop-view-pic.png)
+![Desktop|200](/images/desktop-view-pic.png)
 
 ### Mobile
-![Mobile](/images/mobile-view-pic.png)
+![Mobile|200](/images/mobile-view-pic.png)
