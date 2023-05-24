@@ -24,14 +24,12 @@ See it live here:  [Supurb Quote](https://michael5522.github.io/supurb-quotes/)
 
 ## Preview
 
-### Desktop
-
-### Mobile
+Desktop
 <p align="center">
 <img src="/images/desktop-view.gif" width="400">
 </p>
-<!-- ![Mobile|200](/images/mobile-view.gif) -->
-### Mobile
+
+Mobile
 <p align="center">
 <img src="/images/mobile-view.gif" height="500">
 </p>
@@ -55,7 +53,13 @@ See it live here:  [Supurb Quote](https://michael5522.github.io/supurb-quotes/)
 
 ## ScreenShots
 ### Desktop
-![Desktop|200](/images/desktop-view-pic.png)
+<!-- ![Desktop|200](/images/desktop-view-pic.png) -->
+<p align="center">
+<img src="/images/desktop-view-pic.png" width="400">
+</p>
 
 ### Mobile
-![Mobile|200](/images/mobile-view-pic.png)
+<!-- ![Mobile|200](/images/mobile-view-pic.png) -->
+<p align="center">
+<img src="/images/mobile-view-pic.png" height="500">
+</p>
