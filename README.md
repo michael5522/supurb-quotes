@@ -24,9 +24,9 @@ See it live here:  [Supurb Quote](https://michael5522.github.io/supurb-quotes/)
 
 ## Preview
 
-![Desktop|500](/images/desktop-view.gif)
-
-![Mobile|200](/images/mobile-view.gif)
+<!-- ![Desktop|500](/images/desktop-view.gif) -->
+<img src="/images/desktop-view.gif" width="100" height="100">
+<!-- ![Mobile|200](/images/mobile-view.gif) -->
 
 ## Development
 
