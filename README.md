@@ -7,20 +7,12 @@ A dynamic HTML, CSS, and JavaScript based web application for those interested i
 
 See it live here:  [Supurb Quote](https://michael5522.github.io/supurb-quotes/)
 
-## Technologies Used
+## Built With
 
 - HTML5
 - CSS3
 - JavaScript
 - XMLHttpRequest
-
-## Features
-
-- Users can generate a random quote
-- Users can answer questions to get a quote suited to their needs
-- Users can choose between various backgrounds
-- Users can generate different quotes multiple times
-- Users can see visual error notice if, something went wrong.
 
 ## Preview
 
@@ -43,7 +35,7 @@ Mobile
 
 ### Getting Started
 
-1. Clone the repository & navigate to the directory.
+1. Fork this repository and clone from the terminal, then navigate into the cloned directory
     ```shell
     git clone https://github.com/michael5522/supurb-quotes
     cd supurb-quotes
@@ -57,15 +49,15 @@ Mobile
  4. View project by clicking on ```index.html``` and select 'Open with Live Server'
 
 
-## Screenshots
+<!-- ## Screenshots
 Desktop
-<!-- ![Desktop|200](/images/desktop-view-pic.png) -->
+
 <p align="center">
 <img src="/images/desktop-view-pic.png" width="400">
 </p>
 
 Mobile
-<!-- ![Mobile|200](/images/mobile-view-pic.png) -->
+
 <p align="center">
 <img src="/images/mobile-view-pic.png" height="500">
-</p>
+</p> -->
