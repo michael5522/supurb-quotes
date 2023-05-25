@@ -13,6 +13,7 @@ See it live here:  [Supurb Quote](https://michael5522.github.io/supurb-quotes/)
 - CSS3
 - JavaScript
 - XMLHttpRequest
+- API
 
 ## Preview
 
@@ -47,17 +48,3 @@ Mobile
  3. If you don't already have the Live Server extension add that
 
  4. View project by clicking on ```index.html``` and select 'Open with Live Server'
-
-
-<!-- ## Screenshots
-Desktop
-
-<p align="center">
-<img src="/images/desktop-view-pic.png" width="400">
-</p>
-
-Mobile
-
-<p align="center">
-<img src="/images/mobile-view-pic.png" height="500">
-</p> -->
