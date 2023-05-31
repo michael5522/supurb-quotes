@@ -38,7 +38,7 @@ Mobile
 
 1. Fork this repository and clone from the terminal, then navigate into the cloned directory
     ```shell
-    git clone https://github.com/michael5522/supurb-quotes
+    git clone https://github.com/michael5522/supurb-quotes.git
     cd supurb-quotes
     ```
  2. Open new instance of VS Code window by using the following command
